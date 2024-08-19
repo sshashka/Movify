@@ -1,0 +1,27 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Don`t have an acoount? Register now!" : {
+
+    },
+    "Email" : {
+
+    },
+    "Forgot your password?" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Login" : {
+
+    },
+    "Password" : {
+
+    }
+  },
+  "version" : "1.0"
+}

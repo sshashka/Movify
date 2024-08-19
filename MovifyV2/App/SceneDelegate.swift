@@ -7,6 +7,8 @@
 
 import UIKit
 import SwiftUI
+import ComposableArchitecture
+import FirebaseCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,9 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
+        FirebaseApp.configure()
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UIHostingController(rootView: MainTabView())
+        window?.rootViewController = UIHostingController(rootView: MainTabView(store: Store(initialState: TabViewFeature.State(), reducer: {TabViewFeature()})))
         window?.makeKeyAndVisible()
     }
 
