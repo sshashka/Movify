@@ -12,7 +12,26 @@ struct RegisterView: View {
     @Bindable var store: StoreOf<RegisterFeature>
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField("Email", text: $store.email)
+                .applyTextViewStyle()
+            TextField("Password", text: $store.password)
+                .applyTextViewStyle()
+            
+            Button(action: {
+                store.send(.registerTapped)
+            }, label: {
+                Text("Register")
+            })
+            .buttonStyle(StandardButtonStyle())
+            
+            Button(action: {
+                store.send(.backToLoginTapped)
+            }, label: {
+                Text("Back to login page")
+            })
+            .buttonStyle(StandardButtonStyle())
+        }
     }
 }
 

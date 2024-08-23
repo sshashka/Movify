@@ -13,6 +13,8 @@
 		951C67582C448FB1000FA00F /* MoodToMovieFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951C67572C448FB1000FA00F /* MoodToMovieFeature.swift */; };
 		951C67602C44935E000FA00F /* TabViewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951C675F2C44935E000FA00F /* TabViewFeature.swift */; };
 		951C67622C449B88000FA00F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 951C67612C449B88000FA00F /* Localizable.xcstrings */; };
+		9538A7FC2C780C4B00F61858 /* SwippablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A7FB2C780C4B00F61858 /* SwippablesView.swift */; };
+		9538A7FE2C78118E00F61858 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A7FD2C78118E00F61858 /* CardView.swift */; };
 		957FF72B2C3DF5CD002CEEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FF72A2C3DF5CD002CEEB3 /* AppDelegate.swift */; };
 		957FF72D2C3DF5CD002CEEB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FF72C2C3DF5CD002CEEB3 /* SceneDelegate.swift */; };
 		957FF7342C3DF5CE002CEEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957FF7332C3DF5CE002CEEB3 /* Assets.xcassets */; };
@@ -89,6 +91,8 @@
 		951C67572C448FB1000FA00F /* MoodToMovieFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodToMovieFeature.swift; sourceTree = "<group>"; };
 		951C675F2C44935E000FA00F /* TabViewFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewFeature.swift; sourceTree = "<group>"; };
 		951C67612C449B88000FA00F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9538A7FB2C780C4B00F61858 /* SwippablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwippablesView.swift; sourceTree = "<group>"; };
+		9538A7FD2C78118E00F61858 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		957FF7272C3DF5CD002CEEB3 /* MovifyV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovifyV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957FF72A2C3DF5CD002CEEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		957FF72C2C3DF5CD002CEEB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 				95FD513C2C6E368300AC5E1D /* Auth */,
 				951C675C2C4492D9000FA00F /* TabBar */,
 				951C675A2C4492A8000FA00F /* MoodToMovieView */,
+				9538A7FB2C780C4B00F61858 /* SwippablesView.swift */,
+				9538A7FD2C78118E00F61858 /* CardView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 				957FF75D2C3DF848002CEEB3 /* TabBarItem.swift in Sources */,
 				95FD51352C6D73E800AC5E1D /* StandardButtonStyle.swift in Sources */,
 				951C67602C44935E000FA00F /* TabViewFeature.swift in Sources */,
+				9538A7FE2C78118E00F61858 /* CardView.swift in Sources */,
 				951C67582C448FB1000FA00F /* MoodToMovieFeature.swift in Sources */,
 				95FD51312C6D727000AC5E1D /* TextViewModifier.swift in Sources */,
 				95FD51392C6D7BBB00AC5E1D /* RegisterFeature.swift in Sources */,
@@ -520,6 +527,7 @@
 				951C67542C448B32000FA00F /* Mood.swift in Sources */,
 				957FF75F2C3DF860002CEEB3 /* TabBarView.swift in Sources */,
 				951C67562C448DEE000FA00F /* MoodToMovieView.swift in Sources */,
+				9538A7FC2C780C4B00F61858 /* SwippablesView.swift in Sources */,
 				957FF72D2C3DF5CD002CEEB3 /* SceneDelegate.swift in Sources */,
 				95FD51332C6D735300AC5E1D /* View+Extension.swift in Sources */,
 				957FF7612C3DF888002CEEB3 /* MainTabView.swift in Sources */,

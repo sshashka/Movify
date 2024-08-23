@@ -1,7 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Don`t have an acoount? Register now!" : {
+    "Back to login page" : {
 
     },
     "Email" : {
@@ -20,6 +20,9 @@
 
     },
     "Password" : {
+
+    },
+    "Register" : {
 
     }
   },

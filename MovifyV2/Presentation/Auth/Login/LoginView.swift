@@ -16,41 +16,46 @@ struct LoginView: View {
             ZStack {
                 Color.mainBlue
                     .ignoresSafeArea(.all)
-
-                VStack(alignment: .leading, spacing: Double.twenty) {
-                    Text("Login")
-                        .font(.title).fontWeight(.black)
-                    TextField("Email", text: $store.login)
-                        .keyboardType(.emailAddress)
-                        .applyTextViewStyle()
-                    TextField("Password", text: $store.password)
-                        .applyTextViewStyle()
-                    
-                    Button(action: {
-                        store.send(.loginTapped)
-                    }, label: {
+                
+                VStack {
+                    Spacer()
+                    VStack(alignment: .trailing, spacing: Double.twenty) {
                         Text("Login")
-                    })
-                    .buttonStyle(StandardButtonStyle())
-                    
-                    HStack {
-                        Spacer()
+                            .font(.title)
+                            .fontWeight(.black)
+                            .frame(maxWidth: .infinity)
+                        TextField("Email", text: $store.login)
+                            .keyboardType(.emailAddress)
+                            .applyTextViewStyle()
+                        TextField("Password", text: $store.password)
+                            .applyTextViewStyle()
+                        
                         Button(action: {
-//                            store.send(.registerTapped)
+                            store.send(.loginTapped)
+                        }, label: {
+                            Text("Login")
+                        })
+                        .buttonStyle(StandardButtonStyle())
+                        
+                        Button(action: {
+                            
                         }, label: {
                             Text("Forgot your password?")
                         })
+                        
                     }
+                    .padding()
+                    .background(.thinMaterial)
+                    .cornerRadius(Double.twentyFive)
+                    
                     Spacer()
-                    Button(action: {
+                    
+                    Button {
                         store.send(.registerTapped)
-                    }, label: {
-                        Text("Don`t have an acoount? Register now!")
-                    })
+                    } label: {
+                        Text("Register")
+                    }
                 }
-                .padding()
-                .background(.thinMaterial)
-                .cornerRadius(Double.twentyFive)
                 .padding()
             }
         } destination: { store in

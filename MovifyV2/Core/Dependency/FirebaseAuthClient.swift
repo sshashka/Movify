@@ -11,6 +11,7 @@ import ComposableArchitecture
 
 struct FirebaseAuthClient {
     var loginWith: (String, String) async throws -> Void
+    var registerWithEmailPassword: (String, String) async throws -> Void
 }
 
 extension FirebaseAuthClient: DependencyKey {
@@ -19,6 +20,8 @@ extension FirebaseAuthClient: DependencyKey {
             try await Auth.auth().signIn(withEmail: email, password: password) { result, error in
                 print(result?.user.uid)
             }
+        }, registerWithEmailPassword: { email, pass in
+            try await Auth.auth().createUser(withEmail: email, password: pass)
         }
     )
 }
