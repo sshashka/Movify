@@ -20,12 +20,15 @@ struct MainTabView: View {
                 
                 LoginView(store: store.scope(state: \.auth, action: \.auth))
                     .tag(1)
+                
+                HomeView(store: store.scope(state: \.home, action: \.home))
+                    .tag(2)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbarBackground(.hidden, for: .tabBar)
             .ignoresSafeArea()
             
-            TabBarView(tabItems: ["Moods", "Auth"], selectedIndex: $selectedIndex)
+            TabBarView(tabItems: ["Moods", "Auth", "Home"], selectedIndex: $selectedIndex)
                 .padding(.horizontal)
         }
         

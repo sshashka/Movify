@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MoodListView: View {
     var selectedMood: Mood?
-    private let column: [GridItem] = [.init(.fixed(Double.oneThiry)), .init(.fixed(Double.oneThiry))]
+    private let column: [GridItem] = [.init(.fixed(Double.oneHundredThirty)), .init(.fixed(Double.oneHundredThirty))]
     var body: some View {
         LazyVGrid(columns: column) {
             ForEach(Mood.allCases, id: \.self) { mood in
@@ -19,7 +19,7 @@ struct MoodListView: View {
                         RoundedRectangle(cornerRadius: Double.twentyFive)
                             .stroke(lineWidth: 3)
                             .foregroundStyle(.mainBlue)
-                            .frame(width: Double.oneThiry)
+                            .frame(width: Double.oneHundredThirty)
                     }
             }
         }

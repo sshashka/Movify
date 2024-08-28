@@ -7,6 +7,8 @@
 
 import ComposableArchitecture
 
+
+//TODO: Add a email/password validation
 @Reducer
 struct RegisterFeature {
     @ObservableState

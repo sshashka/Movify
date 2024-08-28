@@ -16,6 +16,8 @@ struct MockData: Identifiable {
 
 struct SwippablesView: View {
     @State var data: [MockData]
+    @Namespace var namespace
+    
     var body: some View {
         ZStack {
             Color.mainBlue

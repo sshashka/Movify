@@ -15,6 +15,14 @@
 		951C67622C449B88000FA00F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 951C67612C449B88000FA00F /* Localizable.xcstrings */; };
 		9538A7FC2C780C4B00F61858 /* SwippablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A7FB2C780C4B00F61858 /* SwippablesView.swift */; };
 		9538A7FE2C78118E00F61858 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A7FD2C78118E00F61858 /* CardView.swift */; };
+		9538A8012C7E895800F61858 /* NowInTheatersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A8002C7E895800F61858 /* NowInTheatersView.swift */; };
+		9538A8032C7E896F00F61858 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A8022C7E896F00F61858 /* KeychainService.swift */; };
+		9538A8062C7E89A900F61858 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9538A8052C7E89A900F61858 /* KeychainSwift */; };
+		9538A8082C7E8AB700F61858 /* FirebaseDatabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A8072C7E8AB700F61858 /* FirebaseDatabaseClient.swift */; };
+		956D1E9E2C7FE49D00A2653C /* TMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D1E9D2C7FE49D00A2653C /* TMDBClient.swift */; };
+		956D1EA02C7FE7F000A2653C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D1E9F2C7FE7F000A2653C /* HomeView.swift */; };
+		956D1EA22C7FE81200A2653C /* HomeViewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D1EA12C7FE81200A2653C /* HomeViewFeature.swift */; };
+		956D1EA42C7FEAD800A2653C /* TMDBNowPlayingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D1EA32C7FEAD800A2653C /* TMDBNowPlayingModel.swift */; };
 		957FF72B2C3DF5CD002CEEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FF72A2C3DF5CD002CEEB3 /* AppDelegate.swift */; };
 		957FF72D2C3DF5CD002CEEB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957FF72C2C3DF5CD002CEEB3 /* SceneDelegate.swift */; };
 		957FF7342C3DF5CE002CEEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957FF7332C3DF5CE002CEEB3 /* Assets.xcassets */; };
@@ -93,6 +101,13 @@
 		951C67612C449B88000FA00F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9538A7FB2C780C4B00F61858 /* SwippablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwippablesView.swift; sourceTree = "<group>"; };
 		9538A7FD2C78118E00F61858 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9538A8002C7E895800F61858 /* NowInTheatersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowInTheatersView.swift; sourceTree = "<group>"; };
+		9538A8022C7E896F00F61858 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		9538A8072C7E8AB700F61858 /* FirebaseDatabaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseClient.swift; sourceTree = "<group>"; };
+		956D1E9D2C7FE49D00A2653C /* TMDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClient.swift; sourceTree = "<group>"; };
+		956D1E9F2C7FE7F000A2653C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		956D1EA12C7FE81200A2653C /* HomeViewFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewFeature.swift; sourceTree = "<group>"; };
+		956D1EA32C7FEAD800A2653C /* TMDBNowPlayingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBNowPlayingModel.swift; sourceTree = "<group>"; };
 		957FF7272C3DF5CD002CEEB3 /* MovifyV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovifyV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957FF72A2C3DF5CD002CEEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		957FF72C2C3DF5CD002CEEB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +161,7 @@
 				957FF78D2C3DFC50002CEEB3 /* FirebaseInstallations in Frameworks */,
 				957FF7952C3DFC50002CEEB3 /* FirebaseRemoteConfig in Frameworks */,
 				957FF7992C3DFC50002CEEB3 /* FirebaseStorage in Frameworks */,
+				9538A8062C7E89A900F61858 /* KeychainSwift in Frameworks */,
 				957FF7792C3DFC50002CEEB3 /* FirebaseDatabase in Frameworks */,
 				957FF7A02C3DFCA2002CEEB3 /* CardStack in Frameworks */,
 				957FF79B2C3DFC50002CEEB3 /* FirebaseStorageCombine-Community in Frameworks */,
@@ -180,8 +196,10 @@
 				95FD513C2C6E368300AC5E1D /* Auth */,
 				951C675C2C4492D9000FA00F /* TabBar */,
 				951C675A2C4492A8000FA00F /* MoodToMovieView */,
-				9538A7FB2C780C4B00F61858 /* SwippablesView.swift */,
-				9538A7FD2C78118E00F61858 /* CardView.swift */,
+				9538A7FF2C7E88E100F61858 /* Swipes */,
+				9538A8002C7E895800F61858 /* NowInTheatersView.swift */,
+				956D1E9F2C7FE7F000A2653C /* HomeView.swift */,
+				956D1EA12C7FE81200A2653C /* HomeViewFeature.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -231,8 +249,18 @@
 			isa = PBXGroup;
 			children = (
 				951C67532C448B32000FA00F /* Mood.swift */,
+				956D1EA32C7FEAD800A2653C /* TMDBNowPlayingModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9538A7FF2C7E88E100F61858 /* Swipes */ = {
+			isa = PBXGroup;
+			children = (
+				9538A7FB2C780C4B00F61858 /* SwippablesView.swift */,
+				9538A7FD2C78118E00F61858 /* CardView.swift */,
+			);
+			path = Swipes;
 			sourceTree = "<group>";
 		};
 		957FF71E2C3DF5CD002CEEB3 = {
@@ -327,6 +355,9 @@
 			isa = PBXGroup;
 			children = (
 				95FD513F2C6E36B300AC5E1D /* FirebaseAuthClient.swift */,
+				9538A8072C7E8AB700F61858 /* FirebaseDatabaseClient.swift */,
+				9538A8022C7E896F00F61858 /* KeychainService.swift */,
+				956D1E9D2C7FE49D00A2653C /* TMDBClient.swift */,
 			);
 			path = Dependency;
 			sourceTree = "<group>";
@@ -387,6 +418,7 @@
 				957FF79A2C3DFC50002CEEB3 /* FirebaseStorageCombine-Community */,
 				957FF79C2C3DFC50002CEEB3 /* FirebaseVertexAI-Preview */,
 				957FF79F2C3DFCA2002CEEB3 /* CardStack */,
+				9538A8052C7E89A900F61858 /* KeychainSwift */,
 			);
 			productName = MovifyV2;
 			productReference = 957FF7272C3DF5CD002CEEB3 /* MovifyV2.app */;
@@ -465,6 +497,7 @@
 				957FF7622C3DFB99002CEEB3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				957FF7652C3DFC50002CEEB3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				957FF79E2C3DFCA2002CEEB3 /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
+				9538A8042C7E89A900F61858 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = 957FF7282C3DF5CD002CEEB3 /* Products */;
 			projectDirPath = "";
@@ -513,9 +546,15 @@
 				957FF72B2C3DF5CD002CEEB3 /* AppDelegate.swift in Sources */,
 				95FD51402C6E36B300AC5E1D /* FirebaseAuthClient.swift in Sources */,
 				951C67522C4489A2000FA00F /* MoodListView.swift in Sources */,
+				956D1EA02C7FE7F000A2653C /* HomeView.swift in Sources */,
 				95FD51372C6D75F600AC5E1D /* LoginFeature.swift in Sources */,
+				9538A8082C7E8AB700F61858 /* FirebaseDatabaseClient.swift in Sources */,
+				956D1E9E2C7FE49D00A2653C /* TMDBClient.swift in Sources */,
+				9538A8012C7E895800F61858 /* NowInTheatersView.swift in Sources */,
 				957FF75D2C3DF848002CEEB3 /* TabBarItem.swift in Sources */,
+				956D1EA22C7FE81200A2653C /* HomeViewFeature.swift in Sources */,
 				95FD51352C6D73E800AC5E1D /* StandardButtonStyle.swift in Sources */,
+				9538A8032C7E896F00F61858 /* KeychainService.swift in Sources */,
 				951C67602C44935E000FA00F /* TabViewFeature.swift in Sources */,
 				9538A7FE2C78118E00F61858 /* CardView.swift in Sources */,
 				951C67582C448FB1000FA00F /* MoodToMovieFeature.swift in Sources */,
@@ -528,6 +567,7 @@
 				957FF75F2C3DF860002CEEB3 /* TabBarView.swift in Sources */,
 				951C67562C448DEE000FA00F /* MoodToMovieView.swift in Sources */,
 				9538A7FC2C780C4B00F61858 /* SwippablesView.swift in Sources */,
+				956D1EA42C7FEAD800A2653C /* TMDBNowPlayingModel.swift in Sources */,
 				957FF72D2C3DF5CD002CEEB3 /* SceneDelegate.swift in Sources */,
 				95FD51332C6D735300AC5E1D /* View+Extension.swift in Sources */,
 				957FF7612C3DF888002CEEB3 /* MainTabView.swift in Sources */,
@@ -879,6 +919,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9538A8042C7E89A900F61858 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 		957FF7622C3DFB99002CEEB3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -906,6 +954,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9538A8052C7E89A900F61858 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9538A8042C7E89A900F61858 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
 		957FF7632C3DFB99002CEEB3 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 957FF7622C3DFB99002CEEB3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
