@@ -9,13 +9,14 @@ import ComposableArchitecture
 
 @Reducer
 struct HomeViewFeature {
-    
+    @ObservableState
     struct State: Equatable {
-        
+        var nowPlayinMovies: [TMDBNowPlayingModelResult] = []
     }
     
     enum Action {
         case didLoad
+        case clientResponded(TMDBNowPlayingModel?)
     }
     
     @Dependency (\.tmdbClient) var client
@@ -28,10 +29,16 @@ struct HomeViewFeature {
             switch action {
                 
             case .didLoad:
-                return .run { _ in
+                return .run { send in
                     try await keychain.setKeys()
-                    try await client.getMovies(1)
+                    try await send(.clientResponded(client.getMovies(1)))
                 }
+                
+            case let .clientResponded(result):
+                guard let result else { return .none }
+                print(result)
+                state.nowPlayinMovies = result.results
+                return .none
             }
         }
     }

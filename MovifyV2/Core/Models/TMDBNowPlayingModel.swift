@@ -9,8 +9,8 @@ import Foundation
 
 import Foundation
 
-// MARK: - Kek
-struct TMDBNowPlayingModel: Codable {
+// MARK: - TMDBNowPlayingModel
+struct TMDBNowPlayingModel: Codable {    
     let dates: Dates
     let page: Int
     let results: [TMDBNowPlayingModelResult]
@@ -29,7 +29,7 @@ struct Dates: Codable {
 }
 
 // MARK: - Result
-struct TMDBNowPlayingModelResult: Codable {
+struct TMDBNowPlayingModelResult: Codable, Equatable, Identifiable {
     let adult: Bool
     let backdropPath: String
     let genreIDS: [Int]

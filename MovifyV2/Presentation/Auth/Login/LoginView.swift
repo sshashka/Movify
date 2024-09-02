@@ -16,7 +16,6 @@ struct LoginView: View {
             ZStack {
                 Color.mainBlue
                     .ignoresSafeArea(.all)
-                
                 VStack {
                     Spacer()
                     VStack(alignment: .trailing, spacing: Double.twenty) {
@@ -53,10 +52,11 @@ struct LoginView: View {
                     Button {
                         store.send(.registerTapped)
                     } label: {
-                        Text("Register")
+                        Text("Dont have an account? Register now!")
                     }
                 }
                 .padding()
+                
             }
         } destination: { store in
             switch store.case {

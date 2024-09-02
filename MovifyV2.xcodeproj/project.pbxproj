@@ -13,6 +13,8 @@
 		951C67582C448FB1000FA00F /* MoodToMovieFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951C67572C448FB1000FA00F /* MoodToMovieFeature.swift */; };
 		951C67602C44935E000FA00F /* TabViewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951C675F2C44935E000FA00F /* TabViewFeature.swift */; };
 		951C67622C449B88000FA00F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 951C67612C449B88000FA00F /* Localizable.xcstrings */; };
+		952F6D682C85278500D88FFD /* CardViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F6D672C85278500D88FFD /* CardViewSmall.swift */; };
+		952F6D6A2C8527EA00D88FFD /* CardViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F6D692C8527EA00D88FFD /* CardViewExpanded.swift */; };
 		9538A7FC2C780C4B00F61858 /* SwippablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A7FB2C780C4B00F61858 /* SwippablesView.swift */; };
 		9538A7FE2C78118E00F61858 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A7FD2C78118E00F61858 /* CardView.swift */; };
 		9538A8012C7E895800F61858 /* NowInTheatersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538A8002C7E895800F61858 /* NowInTheatersView.swift */; };
@@ -99,6 +101,8 @@
 		951C67572C448FB1000FA00F /* MoodToMovieFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodToMovieFeature.swift; sourceTree = "<group>"; };
 		951C675F2C44935E000FA00F /* TabViewFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewFeature.swift; sourceTree = "<group>"; };
 		951C67612C449B88000FA00F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		952F6D672C85278500D88FFD /* CardViewSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewSmall.swift; sourceTree = "<group>"; };
+		952F6D692C8527EA00D88FFD /* CardViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewExpanded.swift; sourceTree = "<group>"; };
 		9538A7FB2C780C4B00F61858 /* SwippablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwippablesView.swift; sourceTree = "<group>"; };
 		9538A7FD2C78118E00F61858 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9538A8002C7E895800F61858 /* NowInTheatersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowInTheatersView.swift; sourceTree = "<group>"; };
@@ -197,9 +201,7 @@
 				951C675C2C4492D9000FA00F /* TabBar */,
 				951C675A2C4492A8000FA00F /* MoodToMovieView */,
 				9538A7FF2C7E88E100F61858 /* Swipes */,
-				9538A8002C7E895800F61858 /* NowInTheatersView.swift */,
-				956D1E9F2C7FE7F000A2653C /* HomeView.swift */,
-				956D1EA12C7FE81200A2653C /* HomeViewFeature.swift */,
+				952F6D6C2C8670F300D88FFD /* Home */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -237,6 +239,7 @@
 		951C675D2C4492F6000FA00F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				952F6D6B2C866E8E00D88FFD /* CardView */,
 				95FD51422C6E385B00AC5E1D /* ViewModifiers */,
 				95FD51412C6E384F00AC5E1D /* Dependency */,
 				95E24CC02C6D6D820004AC2D /* Extensions */,
@@ -254,11 +257,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		952F6D6B2C866E8E00D88FFD /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				9538A7FD2C78118E00F61858 /* CardView.swift */,
+				952F6D672C85278500D88FFD /* CardViewSmall.swift */,
+				952F6D692C8527EA00D88FFD /* CardViewExpanded.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		952F6D6C2C8670F300D88FFD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9538A8002C7E895800F61858 /* NowInTheatersView.swift */,
+				956D1E9F2C7FE7F000A2653C /* HomeView.swift */,
+				956D1EA12C7FE81200A2653C /* HomeViewFeature.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9538A7FF2C7E88E100F61858 /* Swipes */ = {
 			isa = PBXGroup;
 			children = (
 				9538A7FB2C780C4B00F61858 /* SwippablesView.swift */,
-				9538A7FD2C78118E00F61858 /* CardView.swift */,
 			);
 			path = Swipes;
 			sourceTree = "<group>";
@@ -544,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				957FF72B2C3DF5CD002CEEB3 /* AppDelegate.swift in Sources */,
+				952F6D6A2C8527EA00D88FFD /* CardViewExpanded.swift in Sources */,
 				95FD51402C6E36B300AC5E1D /* FirebaseAuthClient.swift in Sources */,
 				951C67522C4489A2000FA00F /* MoodListView.swift in Sources */,
 				956D1EA02C7FE7F000A2653C /* HomeView.swift in Sources */,
@@ -551,6 +574,7 @@
 				9538A8082C7E8AB700F61858 /* FirebaseDatabaseClient.swift in Sources */,
 				956D1E9E2C7FE49D00A2653C /* TMDBClient.swift in Sources */,
 				9538A8012C7E895800F61858 /* NowInTheatersView.swift in Sources */,
+				952F6D682C85278500D88FFD /* CardViewSmall.swift in Sources */,
 				957FF75D2C3DF848002CEEB3 /* TabBarItem.swift in Sources */,
 				956D1EA22C7FE81200A2653C /* HomeViewFeature.swift in Sources */,
 				95FD51352C6D73E800AC5E1D /* StandardButtonStyle.swift in Sources */,

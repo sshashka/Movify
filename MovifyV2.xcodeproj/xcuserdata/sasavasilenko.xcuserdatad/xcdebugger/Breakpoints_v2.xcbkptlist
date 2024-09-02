@@ -7,33 +7,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "199EDDB9-C32A-4D85-915A-3303F7D48816"
-            shouldBeEnabled = "Yes"
+            uuid = "B3B48B25-C35B-436A-8532-AA9A0B91360E"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovifyV2/Core/Dependency/TMDBClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "liveValue"
-            landmarkType = "24">
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getNowPlayingMovies(key:page:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DC4DE82A-BA44-473C-A99B-923BE957276B"
-            shouldBeEnabled = "Yes"
+            uuid = "330EC039-070F-4077-8A82-E8316FFE752F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovifyV2/Core/Dependency/TMDBClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "liveValue"
-            landmarkType = "24">
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getNowPlayingMovies(key:page:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
